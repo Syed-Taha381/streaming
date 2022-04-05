@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+}
+
+body {
+    background: linear-gradient(180.29deg, #213F4F -2.57%, #294A5B 101.5%);
+    height: 1024px;
+}
+
+.regular {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.bold {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.mega-bold {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.max-width {
+    max-width: 1440px;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-blue {
+    color: #00B4FF;
+}
+
+.color-ligh-blue {
+    color: #83BED7;
+}
+
+.ellipse-one {
+    position: absolute;
+    width: 1877px;
+    height: 1805px;
+    left: -541px;
+    top: 3348px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #29B57A 0%, #00B4FF 0.01%, rgba(0, 180, 255, 0) 100%);
+    opacity: 0.4;
+}
+
+.ellipse-two {
+    position: absolute;
+    width: 2308.97px;
+    height: 2304.83px;
+    left: 731.62px;
+    top: 1031.86px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #29B57A 0%, #00B4FF 0.01%, rgba(0, 180, 255, 0) 100%);
+    opacity: 0.4;
+    transform: rotate(37.82deg);
+}
+
+.ellipse-three {
+    position: absolute;
+    width: 90%;
+    height: 899px;
+    left: 100px;
+    top: 0;
+    background: radial-gradient(50% 50% at 50% 50%, #29B57A 0%, #00B4FF 0.01%, rgba(0, 180, 255, 0) 100%);
+    opacity: 0.3;
+}
+
+.ellipse-four {
+
+    position: absolute;
+    width: 1841.41px;
+    height: 739px;
+    left: -507px;
+    top: 1458.31px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #29B57A 0%, #00B4FF 0.01%, rgba(0, 180, 255, 0) 100%);
+    opacity: 0.3;
+    transform: rotate(-23.06deg);
+}
+
+.ellipse-five {
+    position: absolute;
+    width: 1927px;
+    height: 739px;
+    left: -626px;
+    top: 285px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #29B57A 0%, #00B4FF 0.01%, rgba(0, 180, 255, 0) 100%);
+    opacity: 0.4;
+}
+
+.ellipse-six {
+    position: absolute;
+    width: 1460px;
+    height: 1460px;
+    left: 261px;
+    top: 2042px;
+
+    opacity: 0.7;
+}
+
+.shadow-head {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    background: linear-gradient(38.49deg, #00ADF5 35.7%, #00D1ED 108.83%);
+}
+
+.accordian {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)), linear-gradient(180.29deg, #213F4F -2.57%, #294A5B 101.5%);
+    border-radius: 20px;
+}
+
+.line {
+    background-color: #83BED7;
+    opacity: 20%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+    box-shadow: 0px 4px 20px rgba(19, 43, 53, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1px;
+    bottom: 2.75px;
+    background-color: #00B4FF;
+    transition: .4s;
+}
+
+.input:checked+.slider {
+    background-color: #fff;
+}
+
+
+
+.input:checked+.slider:before {
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    transform: translateX(23px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.anyone {
+    padding: 12px 6px 12px 12px;
+    background: linear-gradient(180.29deg, #213F4F -2.57%, #294A5B 101.5%);
+    ;
+    border-radius: 20px;
+}
+
+.add-button {
+    background: linear-gradient(258.21deg, #012F63 11.19%, #026FBE 103.25%);
+    box-shadow: 0px 4px 20px rgba(19, 43, 53, 0.5);
+    border-radius: 100px;
+}
